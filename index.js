@@ -27,13 +27,14 @@ app.get("/",()=>{
 })
 app.use(express.json());
 app.use(cors());
-app.use("/api/checkout",stripeRoute)
+
 app.use("/api/auth",authRoute)
+
 app.use("/api/user",userRoute)
 app.use("/api/product",productRoute)
 app.use("/api/order",orderRoute)
 app.use("/api/cart",cartRoute)
-
+app.use("/api/checkout",stripeRoute)
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log("the server is started in", PORT));
