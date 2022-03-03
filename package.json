@@ -19,7 +19,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.3.1",
     "mongoose": "^6.2.1",
-    "stripe": "^8.202.0"
+    "stripe": "^8.205.0",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
